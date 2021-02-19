@@ -63,7 +63,7 @@ const http = require('http');
 const fetch = require("node-fetch");
 
 setInterval(() => {
-    mongoose.connect("mongodb+srv://AlonePerson:AlonePerson8495@invitetracking.u52vo.mongodb.net/uptime?retryWrites=true&w=majority", function (err,db) {
+    mongoose.connect("MONGODB DATABASE LİNKİ", function (err,db) {
     var users=db.collection("sites");
     users.find({}).toArray(function (err, result){  
       result.forEach(site =>{
