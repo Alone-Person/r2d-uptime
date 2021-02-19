@@ -38,7 +38,7 @@ router.get('/htrhtrghbfgnbhgfhfdgfdsgfhdfsgfdgfdgfdsregsdfgrfrsd/:id', ensureAut
     })  
 })
 router.get('/panel', ensureAuthenticated, function (req, res) {
-  mongoose.connect("mongodb+srv://AlonePerson:AlonePerson8495@invitetracking.u52vo.mongodb.net/uptime?retryWrites=true&w=majority", function (err,db) {
+  mongoose.connect("MONGODB DATABASE LİNKİ", function (err,db) {
     var users=db.collection("users");
 
     users.find({}).toArray(function (err, result){
